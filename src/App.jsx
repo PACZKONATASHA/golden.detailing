@@ -1,4 +1,3 @@
-import Hero from './components/Hero';
 import Services from './components/Services';
 import Premium from './components/Premium';
 import Contact from './components/Contact';
@@ -9,7 +8,6 @@ import './App.css';
 function App() {
   return (
     <div className="app">
-      <Hero />
       <Services />
       <Premium />
       <Contact />
