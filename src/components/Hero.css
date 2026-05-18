@@ -48,23 +48,23 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 50px;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.6), 0 0 1px rgba(255, 255, 255, 0.1) inset;
-  max-width: 1200px;
+  max-width: 1100px;
   width: calc(100% - 80px);
 }
 
 .nav-inner {
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 35px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 50px;
   position: relative;
 }
 
 .nav-inner .logo {
   position: absolute;
-  left: 40px;
+  left: 35px;
 }
 
 .logo {
@@ -231,8 +231,6 @@
   cursor: pointer;
   padding: 4px;
   z-index: 10;
-  position: absolute;
-  right: 20px;
 }
 
 .hamburger span {
@@ -304,7 +302,7 @@
 
   .nav-inner {
     padding: 0 20px;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 0;
   }
 
@@ -369,6 +367,28 @@
 }
 
 @media (max-width: 480px) {
+  .navbar {
+    width: calc(100% - 24px);
+    top: 10px;
+  }
+
+  .nav-inner {
+    padding: 0 16px;
+  }
+
+  .logo-main {
+    font-size: 1.3rem;
+  }
+
+  .logo-sub {
+    font-size: 0.45rem;
+    letter-spacing: 3px;
+  }
+
+  .hamburger {
+    transform: scale(0.9);
+  }
+
   .hero-content {
     padding: 100px 20px 90px;
   }
