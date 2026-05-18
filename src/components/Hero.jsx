@@ -1,76 +1,106 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaWhatsapp } from 'react-icons/fa';
 import heroImage from '../assets/imagen-hero.png';
 import './Hero.css';
+
+const navLinks = [
+  { label: 'Inicio', href: '#inicio' },
+  { label: 'Servicios', href: '#services' },
+  { label: 'Contacto', href: '#contact' },
+];
 
 const Hero = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const closeMenu = () => setMenuOpen(false);
-
   return (
     <section className="hero" id="inicio">
-      {/* Imagen de fondo */}
+      {/* Fondo */}
       <div className="hero-bg">
-        <img src={heroImage} alt="Golden Detailing" />
+        <img src={heroImage} alt="Golden Detailing auto deportivo" />
         <div className="hero-overlay" />
       </div>
 
-      {/* Navbar flotante circular */}
-      <motion.nav
+      {/* ===== NAVBAR ===== */}
+      <motion.header
         className="navbar"
-        initial={{ y: -80, opacity: 0 }}
+        initial={{ y: -60, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
       >
-        <div className="nav-inner">
-          <span className="logo">Golden</span>
+        <div className="nav-container">
+          {/* Logo */}
+          <a href="#inicio" className="nav-logo">
+            <span className="nav-logo-golden">Golden</span>
+            <span className="nav-logo-detailing"> Detailing</span>
+          </a>
+
+          {/* Links desktop */}
           <ul className="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="#contact">Contactos</a></li>
+            {navLinks.map(link => (
+              <li key={link.href}>
+                <a href={link.href}>{link.label}</a>
+              </li>
+            ))}
           </ul>
 
+          {/* Botón contacto desktop */}
+          <a href="#contact" className="nav-cta">Reservar turno</a>
+
+          {/* Hamburger */}
           <button
             className={`hamburger${menuOpen ? ' open' : ''}`}
             onClick={() => setMenuOpen(v => !v)}
-            aria-label="Menú"
+            aria-label="Abrir menú"
           >
             <span /><span /><span />
           </button>
         </div>
 
+        {/* Menú mobile */}
         <AnimatePresence>
           {menuOpen && (
-            <motion.ul
+            <motion.div
               className="nav-mobile"
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.28, ease: 'easeInOut' }}
+              transition={{ duration: 0.25 }}
             >
-              <li><a href="#inicio" onClick={closeMenu}>Inicio</a></li>
-              <li><a href="#services" onClick={closeMenu}>Servicios</a></li>
-              <li><a href="#contact" onClick={closeMenu}>Contactos</a></li>
-            </motion.ul>
+              {navLinks.map(link => (
+                <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)}>
+                  {link.label}
+                </a>
+              ))}
+              <a href="#contact" className="nav-mobile-cta" onClick={() => setMenuOpen(false)}>
+                Reservar turno
+              </a>
+            </motion.div>
           )}
         </AnimatePresence>
-      </motion.nav>
+      </motion.header>
 
-      {/* Contenido principal - Título en el cielo */}
+      {/* ===== HERO CONTENT ===== */}
       <div className="hero-content">
         <motion.div
           className="hero-text"
-          initial={{ opacity: 0, y: -40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.4 }}
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.9, delay: 0.5 }}
         >
+          <p className="hero-tag">Detailing profesional premium</p>
           <h1 className="hero-title">
-            Lavado<br />
-            profesional<br />
-            <span className="hero-title-red">para tu auto</span>
+            Tu auto,<br />
+            impecable<br />
+            <span className="hero-accent">siempre.</span>
           </h1>
+          <p className="hero-subtitle">
+            Lavado, pulido y protección cerámica de primera calidad.<br />
+            Resultados que se notan desde el primer servicio.
+          </p>
+          <div className="hero-actions">
+            <a href="#contact" className="btn-primary">Reservar ahora</a>
+            <a href="#services" className="btn-ghost">Ver servicios</a>
+          </div>
         </motion.div>
       </div>
     </section>
