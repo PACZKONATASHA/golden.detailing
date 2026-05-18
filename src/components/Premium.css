@@ -152,20 +152,22 @@
 /* Número decorativo */
 .card-number {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 4.5rem;
+  font-size: clamp(3rem, 5vw, 5rem);
   line-height: 1;
-  color: rgba(192, 192, 192, 0.18);
+  color: rgba(255, 255, 255, 0.07);
   position: absolute;
-  top: 20px;
-  right: 28px;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
   letter-spacing: 2px;
   transition: color 0.5s;
   pointer-events: none;
-  font-weight: 200;
+  font-weight: 900;
+  user-select: none;
 }
 
 .premium-card:hover .card-number {
-  color: rgba(220, 230, 240, 0.35);
+  color: rgba(255, 255, 255, 0.13);
 }
 
 .card-body {
