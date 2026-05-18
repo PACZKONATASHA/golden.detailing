@@ -25,6 +25,7 @@ const Hero = () => {
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
         <div className="nav-inner">
+          <span className="logo">Golden</span>
           <ul className="nav-links">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#services">Servicios</a></li>
