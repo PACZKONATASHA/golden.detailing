@@ -130,8 +130,32 @@ h1, h2, h3 {
 }
 
 /* Responsive padding */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 0 24px;
+  }
+
+  .btn-red {
+    padding: 13px 32px;
+    font-size: 0.78rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .btn-red {
+    padding: 12px 28px;
+    font-size: 0.75rem;
+    width: 100%;
+    justify-content: center;
   }
 }

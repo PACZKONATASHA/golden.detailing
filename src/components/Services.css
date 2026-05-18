@@ -83,6 +83,7 @@
   border-radius: 2px;
   overflow: hidden;
   height: 280px;
+  width: 100%;
 }
 
 .service-img {
@@ -92,6 +93,7 @@
   object-position: center;
   display: block;
   transition: transform 0.5s ease;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .service-img-wrap:hover .service-img {
@@ -269,11 +271,23 @@
   .services-right {
     position: static;
   }
+
+  .service-img-wrap {
+    height: 240px;
+  }
 }
 
 @media (max-width: 600px) {
   .services-section {
     padding: 80px 0 90px;
+  }
+
+  .services-header {
+    margin-bottom: 50px;
+  }
+
+  .services-title {
+    font-size: 2.5rem;
   }
 
   .lavado-card,
@@ -282,6 +296,38 @@
   }
 
   .service-img-wrap {
-    height: 220px;
+    height: 200px;
+  }
+
+  .service-img {
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .lavado-title,
+  .resultado-title {
+    font-size: 1.6rem;
+  }
+
+  .includes-list li,
+  .lavado-desc,
+  .resultado-desc {
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    padding: 60px 0 70px;
+  }
+
+  .service-img-wrap {
+    height: 180px;
+  }
+
+  .lavado-card,
+  .resultado-card {
+    padding: 24px 20px;
+    gap: 18px;
   }
 }
