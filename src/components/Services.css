@@ -65,10 +65,7 @@
 
 /* ===== BANNER IMAGEN FULL WIDTH ===== */
 .services-banner {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
   margin-bottom: 70px;
   line-height: 0;
 }
