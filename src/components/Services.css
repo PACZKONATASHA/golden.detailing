@@ -184,7 +184,9 @@
 }
 
 .star {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  color: var(--rojo);
+  text-shadow: 0 0 10px rgba(255, 10, 31, 0.6);
 }
 
 /* ===== COLUMNA DERECHA ===== */

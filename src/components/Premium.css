@@ -90,7 +90,7 @@
 /* ===== CARD ===== */
 .premium-card {
   background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(192, 192, 192, 0.1);
   backdrop-filter: blur(15px) saturate(180%);
   -webkit-backdrop-filter: blur(15px) saturate(180%);
   padding: 40px 38px 38px;
@@ -104,9 +104,15 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255, 10, 31, 0.06) 0%, transparent 60%);
-  opacity: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(192, 192, 192, 0.04) 30%,
+    transparent 60%
+  );
+  opacity: 0.6;
   transition: opacity 0.5s;
+  pointer-events: none;
 }
 
 .premium-card::after {
@@ -116,24 +122,31 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 10, 31, 0.4) 50%, transparent);
-  opacity: 0;
+  background: linear-gradient(90deg, transparent, rgba(192, 192, 192, 0.45) 50%, transparent);
+  opacity: 0.7;
   transition: opacity 0.5s;
 }
 
 .premium-card:hover {
-  border-color: rgba(255, 10, 31, 0.35);
-  box-shadow: 0 25px 70px rgba(255, 10, 31, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.03);
-  background: rgba(255, 255, 255, 0.035);
+  border-color: rgba(192, 192, 192, 0.3);
+  box-shadow: 0 25px 70px rgba(192, 192, 192, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.04);
   transform: translateY(-2px);
 }
 
 .premium-card:hover::before {
   opacity: 1;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.07) 0%,
+    rgba(220, 230, 240, 0.05) 40%,
+    transparent 70%
+  );
 }
 
 .premium-card:hover::after {
   opacity: 1;
+  background: linear-gradient(90deg, transparent, rgba(220, 230, 240, 0.7) 50%, transparent);
 }
 
 /* Número decorativo */
@@ -141,7 +154,7 @@
   font-family: 'Bebas Neue', sans-serif;
   font-size: 4.5rem;
   line-height: 1;
-  color: rgba(255, 10, 31, 0.12);
+  color: rgba(192, 192, 192, 0.18);
   position: absolute;
   top: 20px;
   right: 28px;
@@ -152,7 +165,7 @@
 }
 
 .premium-card:hover .card-number {
-  color: rgba(255, 10, 31, 0.25);
+  color: rgba(220, 230, 240, 0.35);
 }
 
 .card-body {

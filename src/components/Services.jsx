@@ -57,9 +57,9 @@ const Services = () => {
               <div className="lavado-includes">
                 <h4 className="includes-label">Incluye</h4>
                 <ul className="includes-list">
-                  <li><span className="star">✨</span> Lavado exterior</li>
-                  <li><span className="star">✨</span> Limpieza básica de interior</li>
-                  <li><span className="star">✨</span> Encerado de ruedas</li>
+                  <li><span className="star">✦</span> Lavado exterior</li>
+                  <li><span className="star">✦</span> Limpieza básica de interior</li>
+                  <li><span className="star">✦</span> Encerado de ruedas</li>
                 </ul>
               </div>
 
