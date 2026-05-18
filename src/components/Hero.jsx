@@ -97,10 +97,16 @@ const Hero = () => {
             Lavado, pulido y protección cerámica de primera calidad.<br />
             Resultados que se notan desde el primer servicio.
           </p>
-          <div className="hero-actions">
-            <a href="#contact" className="btn-primary">Reservar ahora</a>
-            <a href="#services" className="btn-ghost">Ver servicios</a>
-          </div>
+        </motion.div>
+
+        <motion.div
+          className="hero-actions"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.9 }}
+        >
+          <a href="#contact" className="btn-primary">Reservar ahora</a>
+          <a href="#services" className="btn-ghost">Ver servicios</a>
         </motion.div>
       </div>
     </section>

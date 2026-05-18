@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion';
 import servicesImage from '../assets/imagenes servicios.png';
+import bannerImage from '../assets/imagen2.png';
 import './Services.css';
 
 const Services = () => {
   return (
     <section id="services" className="services-section">
+      {/* Título */}
       <div className="container">
-        {/* Título */}
         <motion.div
           className="services-header"
           initial={{ opacity: 0, y: 40 }}
@@ -17,7 +18,20 @@ const Services = () => {
           <h2 className="services-title">Nuestros Servicios</h2>
           <div className="title-underline" />
         </motion.div>
+      </div>
 
+      {/* Banner full-width fuera del container */}
+      <motion.div
+        className="services-banner"
+        initial={{ opacity: 0, scale: 0.99 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.9 }}
+        viewport={{ once: true }}
+      >
+        <img src={bannerImage} alt="Golden Detailing flota de autos" />
+      </motion.div>
+
+      <div className="container">
         {/* Layout principal */}
         <div className="services-layout">
           {/* Columna izquierda: imagen + card Lavado Básico */}
