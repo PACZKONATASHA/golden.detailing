@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { FaWhatsapp, FaInstagram, FaMapMarkerAlt, FaClock, FaPhone } from 'react-icons/fa';
-import logoImg from '../assets/images/logo.png';
 import './Contact.css';
 
 const Contact = () => {
@@ -175,16 +174,7 @@ const Contact = () => {
           />
         </motion.div>
 
-        {/* Logo debajo del mapa */}
-        <motion.div
-          className="contact-logo-block"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          viewport={{ once: true }}
-        >
-          <img src={logoImg} alt="Golden Detailing" className="contact-logo-img" />
-        </motion.div>
+
       </div>
     </section>
   );
