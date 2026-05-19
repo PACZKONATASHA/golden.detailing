@@ -255,13 +255,20 @@
 
 /* Tag */
 .hero-tag {
-  font-size: 0.74rem;
-  font-weight: 600;
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: var(--dorado);
-  text-shadow: 0 0 18px var(--dorado-glow);
+  color: var(--dorado-claro);
+  text-shadow: 0 0 14px var(--dorado-glow);
   margin: 0;
+  padding: 6px 18px;
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  border-radius: 999px;
+  background: rgba(201, 168, 76, 0.05);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 /* Título */
