@@ -262,9 +262,27 @@
   filter: invert(90%) hue-rotate(180deg) saturate(0.7) brightness(0.85);
 }
 
+/* Logo debajo del mapa */
+.contact-logo-block {
+  display: flex;
+  justify-content: center;
+  padding: 48px 0 10px;
+}
+
+.contact-logo-img {
+  height: 130px;
+  width: auto;
+  display: block;
+  mix-blend-mode: screen;
+}
+
 @media (max-width: 768px) {
   .map-iframe {
     height: 280px;
+  }
+
+  .contact-logo-img {
+    height: 100px;
   }
 }
 

@@ -1,6 +1,5 @@
 import { FaInstagram, FaWhatsapp, FaMapMarkerAlt, FaHeart } from 'react-icons/fa';
 import fotoFooter from '../assets/images/foto- foother.jpeg';
-import logoImg from '../assets/images/logo.png';
 import './Footer.css';
 
 const Footer = () => {
@@ -17,7 +16,8 @@ const Footer = () => {
           {/* Brand */}
           <div className="footer-section brand">
             <div className="footer-logo">
-              <img src={logoImg} alt="Golden Detailing" className="footer-logo-img" />
+              <span className="logo-text">Golden</span>
+              <span className="logo-detail">Detailing</span>
             </div>
             <p className="footer-tagline">
               Detailing profesional premium.<br />
