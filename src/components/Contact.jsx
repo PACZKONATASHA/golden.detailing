@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaWhatsapp, FaInstagram, FaMapMarkerAlt, FaClock, FaPhone } from 'react-icons/fa';
+import foto9 from '../assets/foto9.jpeg';
+import foto10 from '../assets/foto-10.png';
 import './Contact.css';
 
 const Contact = () => {
@@ -174,6 +176,32 @@ const Contact = () => {
           />
         </motion.div>
 
+        {/* Franja de fotos reales */}
+        <motion.div
+          className="contact-photos-strip"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          <motion.div
+            className="contact-photo-item contact-photo-wide"
+            whileHover={{ scale: 1.015 }}
+            transition={{ duration: 0.4 }}
+          >
+            <img src={foto9} alt="Exterior detailing" />
+            <div className="contact-photo-label">Exterior · Detailing</div>
+          </motion.div>
+
+          <motion.div
+            className="contact-photo-item"
+            whileHover={{ scale: 1.015 }}
+            transition={{ duration: 0.4 }}
+          >
+            <img src={foto10} alt="Interior detailing" />
+            <div className="contact-photo-label">Interior · Detailing</div>
+          </motion.div>
+        </motion.div>
 
       </div>
     </section>
