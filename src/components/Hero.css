@@ -54,6 +54,62 @@
   text-transform: uppercase;
 }
 
+/* =========================================
+   TARJETA HERO
+   ========================================= */
+.hero-card {
+  position: absolute;
+  bottom: 14%;
+  left: 6%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.42);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 28px 32px 24px;
+  max-width: 340px;
+  text-align: left;
+}
+
+.hero-card-tag {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(204, 18, 18, 0.9);
+  margin-bottom: 10px;
+}
+
+.hero-card-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.05;
+  color: #fff;
+  margin: 0 0 12px 0;
+  letter-spacing: 1px;
+}
+
+.hero-card-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.45);
+  margin: 0 0 22px 0;
+  text-transform: uppercase;
+}
+
+.hero-card-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 /* Puntos indicadores del carrusel */
 .hero-dots {
   position: absolute;

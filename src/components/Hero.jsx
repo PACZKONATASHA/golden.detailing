@@ -104,15 +104,20 @@ const Hero = () => {
         </AnimatePresence>
       </motion.header>
 
-      {/* ===== BOTONES ===== */}
+      {/* ===== TARJETA DE TEXTO ===== */}
       <motion.div
-        className="hero-actions"
-        initial={{ opacity: 0, y: 20 }}
+        className="hero-card"
+        initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.9 }}
+        transition={{ duration: 1, delay: 0.6 }}
       >
-        <a href="#contact" className="btn-primary">Reservar ahora</a>
-        <a href="#services" className="btn-ghost">Ver servicios</a>
+        <span className="hero-card-tag">Golden Detailing</span>
+        <h1 className="hero-card-title">Lavado &amp; Servicio<br />para tu auto</h1>
+        <p className="hero-card-desc">Pulido · Protección cerámica · Detailing premium</p>
+        <div className="hero-card-actions">
+          <a href="#contact" className="btn-primary">Reservar ahora</a>
+          <a href="#services" className="btn-ghost">Ver servicios</a>
+        </div>
       </motion.div>
 
       {/* ===== PUNTOS INDICADORES ===== */}
