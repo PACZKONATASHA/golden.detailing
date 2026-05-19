@@ -1,4 +1,5 @@
 import { FaInstagram, FaWhatsapp, FaMapMarkerAlt, FaHeart } from 'react-icons/fa';
+import fotoFooter from '../assets/images/foto- foother.jpeg';
 import './Footer.css';
 
 const Footer = () => {
@@ -6,6 +7,10 @@ const Footer = () => {
 
   return (
     <footer className="footer">
+      {/* Imagen de fondo decorativa */}
+      <div className="footer-bg-image">
+        <img src={fotoFooter} alt="" aria-hidden="true" />
+      </div>
       <div className="footer-content">
         <div className="footer-grid">
           {/* Brand */}

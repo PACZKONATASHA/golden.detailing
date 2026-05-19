@@ -6,6 +6,7 @@ import './Hero.css';
 const navLinks = [
   { label: 'Inicio', href: '#inicio' },
   { label: 'Servicios', href: '#services' },
+  { label: 'Trabajos', href: '#trabajos' },
   { label: 'Contacto', href: '#contact' },
 ];
 

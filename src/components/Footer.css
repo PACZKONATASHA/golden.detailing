@@ -6,6 +6,24 @@
   overflow: hidden;
 }
 
+/* Imagen de fondo decorativa */
+.footer-bg-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.footer-bg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  opacity: 0.05;
+  filter: grayscale(40%) blur(1px);
+  display: block;
+}
+
 .footer::before {
   content: '';
   position: absolute;
