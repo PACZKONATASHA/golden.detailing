@@ -18,11 +18,14 @@
   z-index: 0;
 }
 
-.hero-bg img {
+/* Slides del carrusel */
+.hero-slide {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 65% center;
+  object-position: center center;
 }
 
 .hero-overlay {
@@ -34,6 +37,50 @@
     rgba(0, 0, 0, 0.0) 50%,
     rgba(0, 0, 0, 0.2) 100%
   );
+}
+
+.hero-sky-text {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  white-space: nowrap;
+  pointer-events: none;
+  text-transform: uppercase;
+}
+
+/* Puntos indicadores del carrusel */
+.hero-dots {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.hero-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.hero-dot.active {
+  background: rgba(255, 255, 255, 0.9);
+  width: 20px;
+  border-radius: 3px;
 }
 
 /* =========================================
@@ -265,10 +312,17 @@
 
 /* Botones fuera de hero-text */
 .hero-actions {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  z-index: 10;
   display: flex;
+  flex-direction: row;
   gap: 14px;
-  flex-wrap: wrap;
-  padding-bottom: 10px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Tag */
@@ -350,9 +404,8 @@
     inset 0 -1px 0 rgba(0, 0, 0, 0.55);
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
 }
-
-.btn-primary::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -397,9 +450,8 @@
   border-radius: 0;
   border: 1px solid rgba(255, 255, 255, 0.14);
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
 }
-
-.btn-ghost:hover {
   border-color: rgba(255, 255, 255, 0.32);
   color: rgba(255, 255, 255, 0.85);
   transform: translateY(-1px);
@@ -485,12 +537,17 @@
   }
 
   .hero-actions {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
   }
 
   .btn-primary,
   .btn-ghost {
+    padding: 6px 12px;
+    font-size: 0.52rem;
+    letter-spacing: 2px;
     text-align: center;
   }
 }
