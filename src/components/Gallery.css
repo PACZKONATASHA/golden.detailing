@@ -28,11 +28,12 @@
 }
 
 .gallery-eyebrow {
-  color: var(--rojo);
+  color: var(--dorado);
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 5px;
   text-transform: uppercase;
+  text-shadow: 0 0 16px var(--dorado-glow);
 }
 
 .gallery-title {
@@ -47,8 +48,8 @@
 .gallery-underline {
   width: 60px;
   height: 2px;
-  background: linear-gradient(90deg, var(--rojo), var(--rojo-metalico));
-  box-shadow: 0 0 14px var(--rojo-glow);
+  background: linear-gradient(90deg, var(--dorado-oscuro), var(--dorado-claro), var(--dorado-oscuro));
+  box-shadow: 0 0 12px var(--dorado-glow);
 }
 
 .gallery-sub {

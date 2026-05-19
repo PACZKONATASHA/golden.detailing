@@ -85,8 +85,8 @@
   font-weight: 700;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: var(--rojo);
-  text-shadow: 0 0 12px rgba(255, 10, 31, 0.4);
+  color: var(--dorado);
+  text-shadow: 0 0 12px var(--dorado-glow);
 }
 
 /* Links */
@@ -121,9 +121,10 @@
   bottom: -4px;
   left: 0;
   width: 0;
-  height: 2px;
-  background: var(--rojo);
+  height: 1px;
+  background: linear-gradient(90deg, var(--dorado), var(--dorado-claro));
   transition: width 0.3s ease;
+  box-shadow: 0 0 8px var(--dorado-glow);
 }
 
 .nav-links a:hover {
@@ -259,11 +260,12 @@
 
 /* Tag */
 .hero-tag {
-  font-size: 0.78rem;
-  font-weight: 700;
+  font-size: 0.74rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  color: var(--rojo);
+  letter-spacing: 4px;
+  color: var(--dorado);
+  text-shadow: 0 0 18px var(--dorado-glow);
   margin: 0;
 }
 
@@ -313,22 +315,22 @@
 }
 
 .btn-ghost {
-  padding: 14px 32px;
+  padding: 13px 28px;
   background: transparent;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 700;
+  font-size: 0.8rem;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   border-radius: 50px;
-  border: 1.5px solid rgba(255, 255, 255, 0.35);
-  transition: border-color 0.25s, background 0.25s, transform 0.2s;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: border-color 0.3s, color 0.3s, transform 0.2s;
 }
 
 .btn-ghost:hover {
-  border-color: #fff;
-  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.9);
   transform: translateY(-2px);
 }
 

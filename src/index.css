@@ -16,6 +16,11 @@
   --blanco-humo: #F5F5F5;
   --gris-card: #0D0D0D;
   --gris-borde: rgba(255, 255, 255, 0.04);
+  --dorado: #C9A84C;
+  --dorado-claro: #E6C96F;
+  --dorado-oscuro: #A07830;
+  --dorado-glow: rgba(201, 168, 76, 0.28);
+  --dorado-borde: rgba(201, 168, 76, 0.2);
 }
 
 html {
