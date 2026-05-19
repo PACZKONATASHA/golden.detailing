@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import heroImage from '../assets/imagen-hero.png';
+import heroImage from '../assets/images/imagen-hero.png';
 import logoImg from '../assets/images/logo.png';
 import './Hero.css';
 

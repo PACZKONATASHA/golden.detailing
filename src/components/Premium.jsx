@@ -27,8 +27,8 @@ const cards = [
   },
   {
     number: '04',
-    title: 'Pulido y Corrección de Pintura',
-    desc: 'Proceso multietapa que elimina rayones superficiales, marcas de remolino y oxidación, restaurando el brillo original de tu vehículo.',
+    title: 'Acondicionador Interior con Protección UV',
+    desc: 'Protección para plásticos y superficies interiores contra resequedad, desgaste y rayos solares.',
     details: null,
   },
 ];

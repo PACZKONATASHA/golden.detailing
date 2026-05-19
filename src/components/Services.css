@@ -1,6 +1,6 @@
-/* ===== SERVICES ===== */
+/* ===== SERVICES — OTROS SERVICIOS ===== */
 .services-section {
-  background: var(--negro);
+  background: #080808;
   padding: 110px 0 120px;
   position: relative;
   z-index: 1;
@@ -76,219 +76,56 @@
   display: block;
 }
 
-/* ===== LAYOUT ===== */
-.services-layout {
+/* ===== GRID OTROS SERVICIOS ===== */
+.otros-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: start;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 64px;
 }
 
-/* ===== COLUMNA IZQUIERDA ===== */
-.services-left {
+/* ===== CARD OTRO SERVICIO ===== */
+.otro-card {
+  padding: 36px 32px;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 16px;
+  cursor: default;
 }
 
-.service-img-wrap {
-  position: relative;
-  border-radius: 2px;
-  overflow: hidden;
-  height: 280px;
-  width: 100%;
-}
-
-.service-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  transition: transform 0.5s ease;
-  image-rendering: -webkit-optimize-contrast;
-}
-
-.service-img-wrap:hover .service-img {
-  transform: scale(1.04);
-}
-
-.service-img-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.1) 0%,
-    rgba(0, 0, 0, 0.55) 100%
-  );
-}
-
-.service-img-label {
-  position: absolute;
-  bottom: 16px;
-  left: 20px;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.05rem;
-  letter-spacing: 5px;
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: 300;
-}
-
-/* Card Lavado Básico */
-.lavado-card {
-  padding: 36px 38px;
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-}
-
-.lavado-title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 2rem;
-  color: #fff;
-  letter-spacing: 3px;
-  font-weight: 300;
-}
-
-.lavado-desc {
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 1.8;
-  font-weight: 300;
-}
-
-.includes-label {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.05rem;
-  letter-spacing: 4px;
+.otro-icon {
+  font-size: 1.1rem;
   color: var(--rojo);
-  margin-bottom: 12px;
-  font-weight: 400;
-  text-shadow: 0 0 20px var(--rojo-glow);
-}
-
-.includes-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.includes-list li {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 0.92rem;
-  color: rgba(255, 255, 255, 0.75);
-  font-weight: 300;
-}
-
-.star {
-  font-size: 1rem;
-  color: var(--rojo);
-  text-shadow: 0 0 10px rgba(255, 10, 31, 0.6);
-}
-
-/* ===== COLUMNA DERECHA ===== */
-.services-right {
-  position: sticky;
-  top: 100px;
-}
-
-.resultado-card {
-  padding: 42px 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
-  border-left: 2px solid var(--rojo);
-  box-shadow: -4px 0 40px rgba(255, 10, 31, 0.15), 0 0 60px rgba(255, 10, 31, 0.08);
-}
-
-.resultado-icon {
-  font-size: 2rem;
-  color: var(--rojo);
+  text-shadow: 0 0 12px var(--rojo-glow);
   line-height: 1;
-  filter: drop-shadow(0 0 20px var(--rojo-glow)) drop-shadow(0 0 40px var(--rojo-brillo));
 }
 
-.resultado-title {
+.otro-title {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.2rem;
+  font-size: 1.45rem;
   color: #fff;
   letter-spacing: 3px;
-  margin-top: -10px;
   font-weight: 300;
+  line-height: 1.1;
 }
 
-.resultado-desc {
-  font-size: 0.92rem;
-  color: rgba(255, 255, 255, 0.5);
+.otro-desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.55);
   line-height: 1.75;
   font-weight: 300;
 }
 
-.resultado-list {
-  list-style: none;
+/* ===== CTA ===== */
+.services-cta {
   display: flex;
-  flex-direction: column;
-  gap: 22px;
-}
-
-.resultado-list li {
-  display: flex;
-  gap: 18px;
-  align-items: flex-start;
-}
-
-.check {
-  display: inline-flex;
-  align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
-  background: linear-gradient(135deg, var(--rojo) 0%, var(--rojo-metalico) 100%);
-  color: #fff;
-  font-size: 0.7rem;
-  font-weight: 600;
-  flex-shrink: 0;
-  margin-top: 2px;
-  box-shadow: 0 4px 15px var(--rojo-glow), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.resultado-list li > div strong {
-  display: block;
-  font-size: 0.95rem;
-  color: #fff;
-  font-weight: 600;
-  margin-bottom: 4px;
-  letter-spacing: 0.3px;
-}
-
-.resultado-list li > div p {
-  font-size: 0.86rem;
-  color: rgba(255, 255, 255, 0.48);
-  font-weight: 300;
-  line-height: 1.6;
-}
-
-.resultado-cta {
-  margin-top: 8px;
 }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 960px) {
-  .services-layout {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .services-right {
-    position: static;
-  }
-
-  .service-img-wrap {
-    height: 240px;
+  .otros-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -305,29 +142,13 @@
     font-size: 2.5rem;
   }
 
-  .lavado-card,
-  .resultado-card {
+  .otros-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .otro-card {
     padding: 28px 24px;
-  }
-
-  .service-img-wrap {
-    height: 200px;
-  }
-
-  .service-img {
-    object-fit: cover;
-    object-position: center center;
-  }
-
-  .lavado-title,
-  .resultado-title {
-    font-size: 1.6rem;
-  }
-
-  .includes-list li,
-  .lavado-desc,
-  .resultado-desc {
-    font-size: 0.88rem;
   }
 }
 
@@ -336,13 +157,42 @@
     padding: 60px 0 70px;
   }
 
-  .service-img-wrap {
-    height: 180px;
-  }
-
-  .lavado-card,
-  .resultado-card {
+  .otro-card {
     padding: 24px 20px;
-    gap: 18px;
+    gap: 12px;
   }
+}
+
+/* Glassmorphism base */
+.glass-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  border-radius: 1px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 10, 31, 0.3) 50%, transparent);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.glass-card:hover {
+  border-color: rgba(255, 10, 31, 0.3);
+  box-shadow: 0 0 50px rgba(255, 10, 31, 0.12), inset 0 0 30px rgba(255, 10, 31, 0.03);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.glass-card:hover::before {
+  opacity: 1;
 }

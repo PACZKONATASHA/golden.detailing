@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaWhatsapp, FaInstagram, FaMapMarkerAlt, FaClock, FaPhone } from 'react-icons/fa';
-import foto9 from '../assets/foto9.jpeg';
-import foto10 from '../assets/foto-10.png';
+import foto9 from '../assets/images/foto9.jpeg';
+import foto10 from '../assets/images/imagen.10.jpeg';
 import './Contact.css';
 
 const Contact = () => {
