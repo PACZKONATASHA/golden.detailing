@@ -155,7 +155,7 @@
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2.8rem;
   line-height: 1;
-  color: rgba(201, 168, 76, 0.22);
+  color: rgba(201, 168, 76, 0.55);
   position: absolute;
   top: 18px;
   right: 20px;
@@ -164,12 +164,12 @@
   pointer-events: none;
   font-weight: 900;
   user-select: none;
-  text-shadow: 0 0 20px rgba(201, 168, 76, 0.15);
+  text-shadow: 0 0 22px rgba(201, 168, 76, 0.4);
 }
 
 .premium-card:hover .card-number {
-  color: rgba(201, 168, 76, 0.45);
-  text-shadow: 0 0 24px rgba(201, 168, 76, 0.35);
+  color: rgba(230, 201, 111, 0.85);
+  text-shadow: 0 0 28px rgba(201, 168, 76, 0.6);
 }
 
 .card-body {
