@@ -92,9 +92,9 @@
   font-size: 0.55rem;
   letter-spacing: 6px;
   text-transform: uppercase;
-  color: var(--dorado);
+  color: var(--azul-claro);
   font-weight: 300;
-  text-shadow: 0 0 16px var(--dorado-glow);
+  text-shadow: 0 0 14px var(--azul-glow);
 }
 
 .footer-tagline {

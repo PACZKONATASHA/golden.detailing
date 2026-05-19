@@ -72,6 +72,7 @@
 
 .nav-logo-img {
   height: 95px;
+  filter: drop-shadow(0 0 10px rgba(26, 107, 196, 0.18));
   width: auto;
   display: block;
   mix-blend-mode: screen;

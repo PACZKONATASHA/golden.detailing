@@ -21,6 +21,10 @@
   --dorado-oscuro: #A07830;
   --dorado-glow: rgba(201, 168, 76, 0.28);
   --dorado-borde: rgba(201, 168, 76, 0.2);
+  --azul: #1A6BC4;
+  --azul-claro: #3A8FE8;
+  --azul-glow: rgba(26, 107, 196, 0.22);
+  --azul-borde: rgba(26, 107, 196, 0.12);
 }
 
 html {

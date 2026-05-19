@@ -48,7 +48,7 @@
 .gallery-underline {
   width: 60px;
   height: 2px;
-  background: linear-gradient(90deg, var(--dorado-oscuro), var(--dorado-claro), var(--dorado-oscuro));
+  background: linear-gradient(90deg, rgba(26,107,196,0.5), var(--dorado-claro), var(--dorado-oscuro));
   box-shadow: 0 0 12px var(--dorado-glow);
 }
 
