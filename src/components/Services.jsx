@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import servicesImage from '../assets/imagenes servicios.png';
-import bannerImage from '../assets/imagen2.png';
+import servicesImage from '../assets/images/foto1.jpeg';
+import bannerImage from '../assets/images/foto2.jpg';
 import './Services.css';
 
 const Services = () => {
