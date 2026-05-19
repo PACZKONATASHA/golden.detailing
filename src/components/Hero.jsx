@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import heroImage from '../assets/imagen-hero.png';
+import logoImg from '../assets/images/logo.png';
 import './Hero.css';
 
 const navLinks = [
@@ -31,8 +32,7 @@ const Hero = () => {
         <div className="nav-container">
           {/* Logo */}
           <a href="#inicio" className="nav-logo">
-            <span className="nav-logo-golden">Golden</span>
-            <span className="nav-logo-detailing"> Detailing</span>
+            <img src={logoImg} alt="Golden Detailing" className="nav-logo-img" />
           </a>
 
           {/* Links desktop */}
