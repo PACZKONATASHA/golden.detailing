@@ -110,8 +110,8 @@ const Contact = () => {
                 </div>
                 <div className="info-content">
                   <h4>Ubicación</h4>
-                  <p>Av. Principal 1234<br />Buenos Aires, Argentina</p>
-                  <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
+                  <p>Olazábal y Mendoza<br />Villa Caraza, Buenos Aires</p>
+                  <a href="https://maps.google.com/?q=Olazabal+y+Mendoza,+Villa+Caraza,+Lanus,+Buenos+Aires" target="_blank" rel="noopener noreferrer">
                     Ver en Maps →
                   </a>
                 </div>
@@ -164,11 +164,14 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="map-placeholder">
-            <FaMapMarkerAlt className="map-icon" />
-            <p>Mapa de ubicación</p>
-            <span>Av. Principal 1234, Buenos Aires</span>
-          </div>
+          <iframe
+            className="map-iframe"
+            title="Ubicación Golden Detailing"
+            src="https://maps.google.com/maps?q=Olazabal+y+Mendoza,+Villa+Caraza,+Lanus,+Buenos+Aires,+Argentina&output=embed&z=16"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </motion.div>
       </div>
     </section>

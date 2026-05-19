@@ -19,8 +19,8 @@
   height: 100%;
   object-fit: cover;
   object-position: center 30%;
-  opacity: 0.05;
-  filter: grayscale(40%) blur(1px);
+  opacity: 0.13;
+  filter: grayscale(20%);
   display: block;
 }
 
