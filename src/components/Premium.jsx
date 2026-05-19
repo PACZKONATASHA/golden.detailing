@@ -91,7 +91,6 @@ const Premium = () => {
               viewport={{ once: true }}
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
             >
-              <div className="card-number">{card.number}</div>
               <div className="card-body">
                 <div className="card-top-line" />
                 <h3 className="card-title">{card.title}</h3>

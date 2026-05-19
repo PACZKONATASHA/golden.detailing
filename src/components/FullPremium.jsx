@@ -131,10 +131,16 @@ const FullPremium = () => {
           className="fp-quote-wrap"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
+          transition={{ duration: 0.9, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <blockquote className="fp-quote">"Cada detalle importa."</blockquote>
+          <motion.blockquote
+            className="fp-quote"
+            animate={{ textShadow: ['0 0 0px rgba(255,255,255,0)', '0 0 24px rgba(255,255,255,0.18)', '0 0 0px rgba(255,255,255,0)'] }}
+            transition={{ duration: 3.5, repeat: Infinity, ease: 'easeInOut' }}
+          >
+            "Cada detalle importa."
+          </motion.blockquote>
         </motion.div>
 
         {/* CTA */}
