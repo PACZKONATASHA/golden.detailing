@@ -89,18 +89,21 @@ h1, h2, h3 {
   align-items: center;
   gap: 10px;
   background: linear-gradient(180deg,
-    #FF5555 0%,
-    #EE1111 18%,
-    #CC1212 48%,
-    #8B0000 80%,
-    #580000 100%
+    #D41414 0%,
+    #C01010 18%,
+    #7A0606 38%,
+    #350202 50%,
+    #7A0606 62%,
+    #C01010 82%,
+    #9A0C0C 100%
   );
   color: #fff;
-  padding: 11px 32px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-bottom-color: rgba(0, 0, 0, 0.5);
+  padding: 7px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top-color: rgba(220, 80, 80, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.6);
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.62rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 4.5px;
@@ -110,9 +113,9 @@ h1, h2, h3 {
   position: relative;
   overflow: hidden;
   box-shadow:
-    0 2px 18px rgba(204, 18, 18, 0.35),
-    inset 0 1px 0 rgba(255, 180, 180, 0.45),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.45);
+    0 3px 20px rgba(160, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 100, 100, 0.2),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.55);
 }
 
 .btn-red::before {
@@ -120,27 +123,32 @@ h1, h2, h3 {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg,
-    rgba(255, 210, 210, 0.28) 0%,
-    rgba(255, 120, 120, 0.12) 35%,
-    transparent 65%
+    rgba(255, 80, 80, 0.12) 0%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.25) 45%,
+    rgba(0, 0, 0, 0.3) 55%,
+    transparent 80%,
+    rgba(255, 40, 40, 0.04) 100%
   );
   pointer-events: none;
 }
 
 .btn-red:hover {
   background: linear-gradient(180deg,
-    #FF6666 0%,
-    #FF2222 18%,
-    #E01515 48%,
-    #A80A0A 80%,
-    #6B0000 100%
+    #E81818 0%,
+    #CC1212 18%,
+    #8C0808 38%,
+    #450303 50%,
+    #8C0808 62%,
+    #CC1212 82%,
+    #AA1010 100%
   );
   box-shadow:
-    0 4px 28px rgba(204, 18, 18, 0.5),
-    inset 0 1px 0 rgba(255, 200, 200, 0.55),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+    0 4px 28px rgba(180, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 120, 120, 0.25),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.6);
   transform: translateY(-1px);
-  border-color: rgba(255, 255, 255, 0.2);
+  border-top-color: rgba(240, 100, 100, 0.4);
 }
 
 .btn-red:hover::before {
@@ -176,8 +184,8 @@ h1, h2, h3 {
   }
 
   .btn-red {
-    padding: 13px 32px;
-    font-size: 0.78rem;
+    padding: 7px 22px;
+    font-size: 0.62rem;
   }
 }
 
@@ -187,9 +195,9 @@ h1, h2, h3 {
   }
 
   .btn-red {
-    padding: 12px 28px;
-    font-size: 0.75rem;
-    width: 100%;
+    padding: 7px 20px;
+    font-size: 0.62rem;
+    width: auto;
     justify-content: center;
   }
 }
