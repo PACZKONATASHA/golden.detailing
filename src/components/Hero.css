@@ -577,6 +577,16 @@
     object-position: 60% center;
   }
 
+  /* Tarjeta hero responsive */
+  .hero-card {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    width: calc(100% - 40px);
+    max-width: 420px;
+    padding: 22px 24px 20px;
+  }
+
   .hero-overlay {
     background: linear-gradient(
       to bottom,
@@ -590,6 +600,16 @@
 @media (max-width: 480px) {
   .hero-title {
     font-size: clamp(2rem, 10vw, 2.8rem);
+  }
+
+  .hero-card {
+    width: calc(100% - 28px);
+    padding: 18px 18px 16px;
+    bottom: 8%;
+  }
+
+  .hero-card-title {
+    font-size: clamp(1.7rem, 8vw, 2.2rem);
   }
 
   .hero-actions {
