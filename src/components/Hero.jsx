@@ -80,36 +80,7 @@ const Hero = () => {
         </AnimatePresence>
       </motion.header>
 
-      {/* ===== HERO CONTENT ===== */}
-      <div className="hero-content">
-        <motion.div
-          className="hero-text"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.9, delay: 0.5 }}
-        >
-          <p className="hero-tag">Detailing profesional premium</p>
-          <h1 className="hero-title">
-            Tu auto,<br />
-            impecable<br />
-            <span className="hero-accent">siempre.</span>
-          </h1>
-          <p className="hero-subtitle">
-            Lavado, pulido y protección cerámica de primera calidad.<br />
-            Resultados que se notan desde el primer servicio.
-          </p>
-        </motion.div>
 
-        <motion.div
-          className="hero-actions"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.9 }}
-        >
-          <a href="#contact" className="btn-primary">Reservar ahora</a>
-          <a href="#services" className="btn-ghost">Ver servicios</a>
-        </motion.div>
-      </div>
     </section>
   );
 };
