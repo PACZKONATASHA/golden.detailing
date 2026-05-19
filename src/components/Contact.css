@@ -1,6 +1,6 @@
 /* ===== CONTACT ===== */
 .contact-section {
-  background: var(--negro);
+  background: linear-gradient(180deg, #060606 0%, #0C0C0C 50%, #060606 100%);
   padding: 110px 0 120px;
   position: relative;
   z-index: 1;
@@ -26,8 +26,9 @@
 /* ===== CARDS ===== */
 .booking-card,
 .info-card {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(192, 192, 192, 0.12);
+  background: linear-gradient(145deg, #121212 0%, #1A1A1A 45%, #0E0E0E 100%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-top-color: rgba(255, 255, 255, 0.14);
   padding: 42px;
   position: relative;
   overflow: hidden;

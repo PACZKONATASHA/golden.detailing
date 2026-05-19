@@ -1,6 +1,6 @@
 /* ===== PREMIUM SECTION ===== */
 .premium-section {
-  background: #080808;
+  background: linear-gradient(180deg, #060606 0%, #0E0E0E 50%, #060606 100%);
   padding: 120px 0 130px;
   position: relative;
   overflow: hidden;
@@ -41,7 +41,10 @@
 .premium-title {
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(2.8rem, 6vw, 4.5rem);
-  color: #fff;
+  background: linear-gradient(180deg, #FFFFFF 0%, #D8D8D8 50%, #A0A0A0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   letter-spacing: 4px;
   line-height: 1.05;
   text-align: center;
@@ -68,7 +71,7 @@
 .cards-header-line {
   flex: 1;
   height: 1px;
-  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(90deg, transparent, rgba(200,200,200,0.2) 30%, rgba(255,255,255,0.5) 50%, rgba(200,200,200,0.2) 70%, transparent);
 }
 
 .cards-header-text {
@@ -90,8 +93,9 @@
 
 /* ===== CARD ===== */
 .premium-card {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(192, 192, 192, 0.1);
+  background: linear-gradient(145deg, #121212 0%, #1A1A1A 45%, #0E0E0E 100%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-top-color: rgba(255, 255, 255, 0.14);
   backdrop-filter: blur(15px) saturate(180%);
   -webkit-backdrop-filter: blur(15px) saturate(180%);
   padding: 40px 38px 38px;
@@ -129,10 +133,11 @@
 }
 
 .premium-card:hover {
-  border-color: rgba(192, 192, 192, 0.3);
-  box-shadow: 0 25px 70px rgba(192, 192, 192, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.06);
-  background: rgba(255, 255, 255, 0.04);
-  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.15);
+  border-top-color: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.5), 0 0 40px rgba(204,18,18,0.08), inset 0 1px 0 rgba(255,255,255,0.1);
+  background: linear-gradient(145deg, #181818 0%, #222222 45%, #141414 100%);
+  transform: translateY(-3px);
 }
 
 .premium-card:hover::before {
@@ -155,21 +160,23 @@
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2.8rem;
   line-height: 1;
-  color: rgba(201, 168, 76, 0.55);
+  background: linear-gradient(180deg, #E8C96A 0%, #C9A84C 35%, #8A6020 65%, #C9A84C 90%, #E8C96A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   position: absolute;
   top: 18px;
   right: 20px;
   letter-spacing: 2px;
-  transition: color 0.5s, text-shadow 0.5s;
+  transition: filter 0.5s;
   pointer-events: none;
   font-weight: 900;
   user-select: none;
-  text-shadow: 0 0 22px rgba(201, 168, 76, 0.4);
+  filter: drop-shadow(0 0 8px rgba(201, 168, 76, 0.35));
 }
 
 .premium-card:hover .card-number {
-  color: rgba(230, 201, 111, 0.85);
-  text-shadow: 0 0 28px rgba(201, 168, 76, 0.6);
+  filter: drop-shadow(0 0 14px rgba(201, 168, 76, 0.7));
 }
 
 .card-body {
@@ -182,9 +189,9 @@
 .card-top-line {
   width: 50px;
   height: 2px;
-  background: linear-gradient(90deg, var(--rojo) 0%, var(--rojo-metalico) 100%);
+  background: linear-gradient(90deg, #4A0000 0%, var(--rojo) 35%, #FF5050 55%, var(--rojo) 80%, #4A0000 100%);
   margin-bottom: 22px;
-  box-shadow: 0 0 20px var(--rojo-glow), 0 0 40px var(--rojo-brillo);
+  box-shadow: 0 0 12px var(--rojo-glow), 0 0 24px rgba(204,18,18,0.2);
   transition: width 0.35s;
 }
 
@@ -196,7 +203,10 @@
 .card-title {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.6rem;
-  color: #fff;
+  background: linear-gradient(180deg, #FFFFFF 0%, #D0D0D0 60%, #A8A8A8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   letter-spacing: 2px;
   margin-bottom: 14px;
   line-height: 1.1;

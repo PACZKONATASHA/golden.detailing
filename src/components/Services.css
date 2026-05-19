@@ -1,6 +1,6 @@
 /* ===== SERVICES — OTROS SERVICIOS ===== */
 .services-section {
-  background: #080808;
+  background: linear-gradient(180deg, #060606 0%, #0E0E0E 50%, #060606 100%);
   padding: 110px 0 120px;
   position: relative;
   z-index: 1;
@@ -49,7 +49,10 @@
 .services-title {
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(2.5rem, 5vw, 4rem);
-  color: #fff;
+  background: linear-gradient(180deg, #FFFFFF 0%, #D8D8D8 50%, #A0A0A0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   letter-spacing: 4px;
   margin-bottom: 16px;
   font-weight: 300;
@@ -58,9 +61,9 @@
 .title-underline {
   width: 80px;
   height: 2px;
-  background: linear-gradient(90deg, transparent, var(--rojo) 20%, var(--rojo-metalico) 50%, var(--rojo) 80%, transparent);
+  background: linear-gradient(90deg, transparent, rgba(200,200,200,0.2) 15%, rgba(255,255,255,0.65) 50%, rgba(200,200,200,0.2) 85%, transparent);
   margin: 0 auto;
-  box-shadow: 0 0 25px var(--rojo-glow), 0 0 50px var(--rojo-brillo);
+  box-shadow: 0 0 12px rgba(255,255,255,0.18), 0 0 28px rgba(204,18,18,0.15);
 }
 
 /* ===== BANNER IMAGEN FULL WIDTH ===== */
@@ -103,7 +106,10 @@
 .otro-title {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.45rem;
-  color: #fff;
+  background: linear-gradient(180deg, #FFFFFF 0%, #D0D0D0 55%, #AAAAAA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   letter-spacing: 3px;
   font-weight: 300;
   line-height: 1.1;
@@ -150,49 +156,4 @@
   .otro-card {
     padding: 28px 24px;
   }
-}
-
-@media (max-width: 480px) {
-  .services-section {
-    padding: 60px 0 70px;
-  }
-
-  .otro-card {
-    padding: 24px 20px;
-    gap: 12px;
-  }
-}
-
-/* Glassmorphism base */
-.glass-card {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(15px) saturate(180%);
-  -webkit-backdrop-filter: blur(15px) saturate(180%);
-  border-radius: 1px;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
-}
-
-.glass-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 10, 31, 0.3) 50%, transparent);
-  opacity: 0;
-  transition: opacity 0.4s;
-}
-
-.glass-card:hover {
-  border-color: rgba(255, 10, 31, 0.3);
-  box-shadow: 0 0 50px rgba(255, 10, 31, 0.12), inset 0 0 30px rgba(255, 10, 31, 0.03);
-  background: rgba(255, 255, 255, 0.03);
-}
-
-.glass-card:hover::before {
-  opacity: 1;
 }

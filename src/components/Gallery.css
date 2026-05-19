@@ -1,12 +1,12 @@
 /* ===== GALLERY SECTION ===== */
 .gallery-section {
-  background: #050505;
+  background: linear-gradient(180deg, #0A0A0A 0%, #050505 50%, #0A0A0A 100%);
   padding: 110px 0 100px;
   position: relative;
   overflow: hidden;
 }
 
-/* Glow de fondo */
+/* Chrome top border */
 .gallery-section::before {
   content: '';
   position: absolute;
@@ -14,7 +14,7 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 10, 31, 0.3) 50%, transparent);
+  background: linear-gradient(90deg, transparent, rgba(200,200,200,0.15) 30%, rgba(255,255,255,0.35) 50%, rgba(200,200,200,0.15) 70%, transparent);
 }
 
 /* ===== HEADER ===== */
@@ -39,7 +39,10 @@
 .gallery-title {
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(2.8rem, 6vw, 4.5rem);
-  color: #fff;
+  background: linear-gradient(180deg, #FFFFFF 0%, #D8D8D8 50%, #A0A0A0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   letter-spacing: 4px;
   line-height: 1;
   font-weight: 300;
@@ -48,8 +51,8 @@
 .gallery-underline {
   width: 60px;
   height: 2px;
-  background: linear-gradient(90deg, rgba(26,107,196,0.5), var(--dorado-claro), var(--dorado-oscuro));
-  box-shadow: 0 0 12px var(--dorado-glow);
+  background: linear-gradient(90deg, transparent, rgba(200,200,200,0.25) 20%, rgba(255,255,255,0.65) 50%, rgba(200,200,200,0.25) 80%, transparent);
+  box-shadow: 0 0 12px rgba(255,255,255,0.18);
 }
 
 .gallery-sub {
