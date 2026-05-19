@@ -24,12 +24,17 @@
   display: block;
 }
 
-/* Overlay para que el texto sea legible */
+/* Overlay: gradiente suave para que el texto sea legible sin ahogar la imagen */
 .footer-bg-image::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.72);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.62) 0%,
+    rgba(0, 0, 0, 0.50) 40%,
+    rgba(0, 0, 0, 0.58) 100%
+  );
 }
 
 .footer::before {

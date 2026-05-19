@@ -114,7 +114,9 @@
     transparent 100%
   );
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
   padding: 20px 22px;
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -215,6 +217,16 @@
   }
 }
 
+/* Hint de zoom en overlay */
+.gallery-zoom-hint {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 6px;
+  display: block;
+}
+
 @media (max-width: 480px) {
   .gallery-header {
     margin-bottom: 40px;
@@ -225,4 +237,79 @@
     gap: 14px;
     text-align: center;
   }
+}
+
+/* ===== LIGHTBOX ===== */
+.lightbox-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.93);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.lightbox-content img {
+  max-width: 90vw;
+  max-height: 82vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.lightbox-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-top: none;
+}
+
+.lightbox-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  border-left: 2px solid var(--rojo);
+  padding-left: 10px;
+}
+
+.lightbox-close {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s;
+  line-height: 1;
+}
+
+.lightbox-close:hover {
+  background: var(--rojo);
+  border-color: var(--rojo);
+  color: #fff;
 }
