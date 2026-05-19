@@ -4,7 +4,6 @@ import Premium from './components/Premium';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import WhatsAppButton from './components/WhatsAppButton';
 import './App.css';
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
       <Gallery />
       <Contact />
       <Footer />
-      <WhatsAppButton />
     </div>
   );
 }
