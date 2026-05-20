@@ -99,20 +99,22 @@ const Hero = () => {
       </motion.header>
 
       {/* ===== TARJETA DE TEXTO ===== */}
-      <motion.div
-        className="hero-card"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.6 }}
-      >
-        <span className="hero-card-tag">Golden Detailing</span>
-        <h1 className="hero-card-title">Lavado &amp; Servicio<br />para tu auto</h1>
-        <p className="hero-card-desc">Pulido · Protección cerámica · Detailing premium</p>
-        <div className="hero-card-actions">
-          <a href="#contact" className="btn-primary">Reservar ahora</a>
-          <a href="#services" className="btn-ghost">Ver servicios</a>
-        </div>
-      </motion.div>
+      <div className="hero-card-wrapper">
+        <motion.div
+          className="hero-card"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.6 }}
+        >
+          <span className="hero-card-tag">Golden Detailing</span>
+          <h1 className="hero-card-title">Lavado &amp; Servicio<br />para tu auto</h1>
+          <p className="hero-card-desc">Pulido · Protección cerámica · Detailing premium</p>
+          <div className="hero-card-actions">
+            <a href="#contact" className="btn-primary">Reservar ahora</a>
+            <a href="#services" className="btn-ghost">Ver servicios</a>
+          </div>
+        </motion.div>
+      </div>
 
       {/* ===== PUNTOS INDICADORES ===== */}
       <div className="hero-dots">

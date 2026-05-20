@@ -57,21 +57,25 @@
 /* =========================================
    TARJETA HERO
    ========================================= */
-.hero-card {
+.hero-card-wrapper {
   position: absolute;
   bottom: 12%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
-  background: rgba(0, 0, 0, 0.48);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-top: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 32px 40px 28px;
-  max-width: 540px;
   width: calc(100% - 80px);
+  max-width: 620px;
+}
+
+.hero-card {
+  background: rgba(0, 0, 0, 0.52);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 40px 48px 36px;
   text-align: center;
+  width: 100%;
 }
 
 .hero-card-tag {
@@ -87,10 +91,10 @@
 
 .hero-card-title {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-size: clamp(2rem, 5vw, 3.8rem);
   line-height: 1.05;
   color: #fff;
-  margin: 0 0 12px 0;
+  margin: 0 0 14px 0;
   letter-spacing: 1px;
 }
 
@@ -580,10 +584,13 @@
   }
 
   /* Tarjeta hero responsive */
-  .hero-card {
+  .hero-card-wrapper {
     bottom: 10%;
     width: calc(100% - 40px);
     max-width: 420px;
+  }
+
+  .hero-card {
     padding: 22px 24px 20px;
   }
 
@@ -602,10 +609,13 @@
     font-size: clamp(2rem, 10vw, 2.8rem);
   }
 
-  .hero-card {
+  .hero-card-wrapper {
     width: calc(100% - 24px);
-    padding: 18px 16px 16px;
     bottom: 8%;
+  }
+
+  .hero-card {
+    padding: 18px 16px 16px;
   }
 
   .hero-card-title {
