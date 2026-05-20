@@ -129,31 +129,27 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="info-item-card">
+              <a className="info-item-card info-item-link" href="https://wa.me/5491135195978" target="_blank" rel="noopener noreferrer">
                 <div className="info-icon-wrapper">
                   <FaPhone />
                 </div>
                 <div className="info-content">
                   <h4>Teléfono</h4>
                   <p>+54 9 11 3519-5978</p>
-                  <a href="https://wa.me/5491135195978" target="_blank" rel="noopener noreferrer">
-                    WhatsApp →
-                  </a>
+                  <span className="info-link-label">Abrir WhatsApp →</span>
                 </div>
-              </div>
+              </a>
 
-              <div className="info-item-card">
+              <a className="info-item-card info-item-link" href="https://instagram.com/golden.detailing__" target="_blank" rel="noopener noreferrer">
                 <div className="info-icon-wrapper">
                   <FaInstagram />
                 </div>
                 <div className="info-content">
                   <h4>Instagram</h4>
                   <p>@golden.detailing__</p>
-                  <a href="https://instagram.com/golden.detailing__" target="_blank" rel="noopener noreferrer">
-                    Seguinos →
-                  </a>
+                  <span className="info-link-label">Seguinos →</span>
                 </div>
-              </div>
+              </a>
             </div>
           </motion.div>
         </div>

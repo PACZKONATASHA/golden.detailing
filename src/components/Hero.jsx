@@ -4,7 +4,7 @@ import logoImg from '../assets/images/logo.png';
 import img1  from '../assets/images/imagen-hero.png';
 import img2  from '../assets/images/foto2.hero.jpeg';
 import img3  from '../assets/images/foto.3hero.jpeg';
-import img4  from '../assets/images/foto.4hero.jpeg';
+import img4  from '../assets/images/foto4.hero.jpeg';
 import img5  from '../assets/images/foto.5hero.jpeg';
 import './Hero.css';
 

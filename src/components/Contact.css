@@ -246,6 +246,26 @@
   text-shadow: 0 0 25px var(--rojo-brillo);
 }
 
+/* Tarjeta entera clickeable */
+.info-item-link {
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+}
+
+.info-link-label {
+  color: var(--rojo);
+  font-weight: 500;
+  font-size: 0.87rem;
+  text-shadow: 0 0 15px var(--rojo-glow);
+  transition: all 0.3s;
+}
+
+.info-item-link:hover .info-link-label {
+  color: var(--rojo-metalico);
+  text-shadow: 0 0 25px var(--rojo-brillo);
+}
+
 /* Map */
 .map-container {
   max-width: 1300px;

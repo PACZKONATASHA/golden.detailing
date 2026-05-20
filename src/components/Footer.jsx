@@ -85,7 +85,7 @@ const Footer = () => {
             <p>© {currentYear} Golden Detailing. Todos los derechos reservados.</p>
           </div>
           <div className="footer-credits">
-            <p>Hecho con <FaHeart className="heart-icon" /> por <strong>Paczko Natasha</strong> · Diseño Web</p>
+            <p>Hecho por <strong>Natasha Paczko</strong> · Diseño Web</p>
           </div>
         </div>
       </div>
