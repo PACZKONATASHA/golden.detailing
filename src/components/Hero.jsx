@@ -2,19 +2,13 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import logoImg from '../assets/images/logo.png';
 import img1  from '../assets/images/imagen-hero.png';
-import img2  from '../assets/images/foto1.jpeg';
-import img3  from '../assets/images/foto2.jpg';
-import img4  from '../assets/images/foto3.jpg';
-import img5  from '../assets/images/imagen4.jpeg';
-import img6  from '../assets/images/foto5.jpg';
-import img7  from '../assets/images/foto6.jpg';
-import img8  from '../assets/images/foto9.jpeg';
-import img9  from '../assets/images/imagen.10.jpeg';
-import img10 from '../assets/images/imagen11.jpeg';
-import img11 from '../assets/images/foto- foother.jpeg';
+import img2  from '../assets/images/foto2.hero.jpeg';
+import img3  from '../assets/images/foto.3hero.jpeg';
+import img4  from '../assets/images/foto.4hero.jpeg';
+import img5  from '../assets/images/foto.5hero.jpeg';
 import './Hero.css';
 
-const SLIDES = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11];
+const SLIDES = [img1, img2, img3, img4, img5];
 const INTERVAL = 4500; // ms por foto
 
 const navLinks = [

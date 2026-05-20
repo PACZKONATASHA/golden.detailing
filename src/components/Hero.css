@@ -59,17 +59,19 @@
    ========================================= */
 .hero-card {
   position: absolute;
-  bottom: 14%;
-  left: 6%;
+  bottom: 12%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 10;
-  background: rgba(0, 0, 0, 0.42);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  background: rgba(0, 0, 0, 0.48);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
-  padding: 28px 32px 24px;
-  max-width: 340px;
-  text-align: left;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 32px 40px 28px;
+  max-width: 540px;
+  width: calc(100% - 80px);
+  text-align: center;
 }
 
 .hero-card-tag {
@@ -107,7 +109,7 @@
   gap: 12px;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 /* Puntos indicadores del carrusel */
@@ -579,8 +581,6 @@
 
   /* Tarjeta hero responsive */
   .hero-card {
-    left: 50%;
-    transform: translateX(-50%);
     bottom: 10%;
     width: calc(100% - 40px);
     max-width: 420px;
@@ -603,8 +603,8 @@
   }
 
   .hero-card {
-    width: calc(100% - 28px);
-    padding: 18px 18px 16px;
+    width: calc(100% - 24px);
+    padding: 18px 16px 16px;
     bottom: 8%;
   }
 
