@@ -59,9 +59,9 @@
    ========================================= */
 .hero-card-wrapper {
   position: absolute;
-  bottom: 12%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   z-index: 10;
   width: calc(100% - 80px);
   max-width: 620px;
@@ -585,7 +585,6 @@
 
   /* Tarjeta hero responsive */
   .hero-card-wrapper {
-    bottom: 10%;
     width: calc(100% - 40px);
     max-width: 420px;
   }
@@ -611,7 +610,6 @@
 
   .hero-card-wrapper {
     width: calc(100% - 24px);
-    bottom: 8%;
   }
 
   .hero-card {
