@@ -583,10 +583,10 @@
     object-position: 60% center;
   }
 
-  /* Tarjeta hero: en mobile va abajo para no tapar el auto */
+  /* Tarjeta hero: en mobile va arriba en el cielo */
   .hero-card-wrapper {
-    top: auto;
-    bottom: 60px;
+    top: 72px;
+    bottom: auto;
     transform: translateX(-50%);
     width: calc(100% - 32px);
     max-width: 100%;
@@ -608,10 +608,10 @@
   .hero-overlay {
     background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 0.1) 40%,
-      rgba(0, 0, 0, 0.55) 70%,
-      rgba(0, 0, 0, 0.75) 100%
+      rgba(0, 0, 0, 0.72) 0%,
+      rgba(0, 0, 0, 0.55) 35%,
+      rgba(0, 0, 0, 0.1) 60%,
+      rgba(0, 0, 0, 0.0) 100%
     );
   }
 }
@@ -623,7 +623,8 @@
 
   .hero-card-wrapper {
     width: calc(100% - 20px);
-    bottom: 50px;
+    top: 68px;
+    bottom: auto;
   }
 
   .hero-card {
