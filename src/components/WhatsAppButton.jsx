@@ -14,12 +14,12 @@ const WhatsAppButton = () => {
   ];
 
   const handleQuickMessage = (message) => {
-    window.open(`https://wa.me/5491234567890?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/5491135195978?text=${encodeURIComponent(message)}`, '_blank');
     setIsOpen(false);
   };
 
   const handleDirectMessage = () => {
-    window.open('https://wa.me/5491234567890', '_blank');
+    window.open('https://wa.me/5491135195978', '_blank');
   };
 
   return (

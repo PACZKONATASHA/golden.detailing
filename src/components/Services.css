@@ -71,12 +71,28 @@
   width: 100%;
   margin-bottom: 70px;
   line-height: 0;
+  overflow: hidden;
 }
 
 .services-banner img {
   width: 100%;
-  height: auto;
+  height: 420px;
+  object-fit: cover;
+  object-position: center 40%;
   display: block;
+}
+
+@media (max-width: 768px) {
+  .services-banner img {
+    height: 220px;
+    object-position: center 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-banner img {
+    height: 180px;
+  }
 }
 
 /* ===== GRID OTROS SERVICIOS ===== */

@@ -7,7 +7,7 @@ import './Contact.css';
 const Contact = () => {
   const handleQuickBooking = (service) => {
     const message = `Hola! Quiero agendar un turno para: ${service}`;
-    window.open(`https://wa.me/5491234567890?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/5491135195978?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   const quickServices = [
@@ -84,7 +84,7 @@ const Contact = () => {
                 whileTap={{ scale: 0.96 }}
                 onClick={() =>
                   window.open(
-                    'https://wa.me/5491234567890?text=Hola!%20Quiero%20agendar%20un%20turno',
+                    'https://wa.me/5491135195978?text=Hola!%20Quiero%20agendar%20un%20turno',
                     '_blank'
                   )
                 }
@@ -135,8 +135,8 @@ const Contact = () => {
                 </div>
                 <div className="info-content">
                   <h4>Teléfono</h4>
-                  <p>+54 9 11 1234-5678</p>
-                  <a href="https://wa.me/5491234567890" target="_blank" rel="noopener noreferrer">
+                  <p>+54 9 11 3519-5978</p>
+                  <a href="https://wa.me/5491135195978" target="_blank" rel="noopener noreferrer">
                     WhatsApp →
                   </a>
                 </div>
@@ -148,8 +148,8 @@ const Contact = () => {
                 </div>
                 <div className="info-content">
                   <h4>Instagram</h4>
-                  <p>@goldendetailing</p>
-                  <a href="https://instagram.com/goldendetailing" target="_blank" rel="noopener noreferrer">
+                  <p>@golden.detailing__</p>
+                  <a href="https://instagram.com/golden.detailing__" target="_blank" rel="noopener noreferrer">
                     Seguinos →
                   </a>
                 </div>

@@ -24,10 +24,10 @@ const Footer = () => {
               Perfección en cada detalle.
             </p>
             <div className="footer-social">
-              <a href="https://instagram.com/goldendetailing" target="_blank" rel="noopener noreferrer">
+              <a href="https://instagram.com/golden.detailing__" target="_blank" rel="noopener noreferrer">
                 <FaInstagram />
               </a>
-              <a href="https://wa.me/5491234567890" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5491135195978" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp />
               </a>
             </div>
@@ -60,16 +60,20 @@ const Footer = () => {
             <h4>Contacto</h4>
             <ul className="footer-contact">
               <li>
-                <FaWhatsapp />
-                <span>+54 9 11 1234-5678</span>
+                <a href="https://wa.me/5491135195978" target="_blank" rel="noopener noreferrer">
+                  <FaWhatsapp />
+                  <span>+54 9 11 3519-5978</span>
+                </a>
               </li>
               <li>
                 <FaMapMarkerAlt />
-                <span>Buenos Aires, Argentina</span>
+                <span>Olazábal y Mendoza, Villa Caraza, Buenos Aires</span>
               </li>
               <li>
-                <FaInstagram />
-                <span>@goldendetailing</span>
+                <a href="https://instagram.com/golden.detailing__" target="_blank" rel="noopener noreferrer">
+                  <FaInstagram />
+                  <span>@golden.detailing__</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -81,7 +85,7 @@ const Footer = () => {
             <p>© {currentYear} Golden Detailing. Todos los derechos reservados.</p>
           </div>
           <div className="footer-credits">
-            <p>Hecho con <FaHeart className="heart-icon" /> en Argentina</p>
+            <p>Hecho con <FaHeart className="heart-icon" /> por <strong>Paczko Natasha</strong> · Diseño Web</p>
           </div>
         </div>
       </div>

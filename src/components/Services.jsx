@@ -101,7 +101,7 @@ const Services = () => {
             whileTap={{ scale: 0.95 }}
             onClick={() =>
               window.open(
-                'https://wa.me/5491234567890?text=Hola!%20Quiero%20consultar%20sobre%20sus%20servicios',
+                'https://wa.me/5491135195978?text=Hola!%20Quiero%20consultar%20sobre%20sus%20servicios',
                 '_blank'
               )
             }
