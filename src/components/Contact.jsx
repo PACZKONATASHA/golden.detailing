@@ -125,7 +125,7 @@ const Contact = () => {
                 </div>
                 <div className="info-content">
                   <h4>Horarios</h4>
-                  <p>Lun - Vie: 10:00 - 18:00<br />Sábados: 9:00 - 14:00</p>
+                  <p>Lun - Vie: 10:00 - 18:00<br /></p>
                 </div>
               </div>
 
